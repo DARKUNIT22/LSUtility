@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+    	<dict>
+    		<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Camera Grabber</string>
+			<key>footerText</key>
+			<string>Quick launch allows you to make the camera grabber launch a custom app. Respring required.</string>
+    	</dict>
+    	<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.unit22.lsutilityprefs</string>
+			<key>key</key>
+			<string>HideCameraGrabberisEnabled</string>
+			<key>label</key>
+			<string>Hide Camera Grabber</string>
+			<key>PostNotification</key>
+			<string>com.unit22.lsutilityprefs/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.unit22.lsutilityprefs</string>
+			<key>key</key>
+			<string>cameraGrabberQuickLaunchisEnabled</string>
+			<key>label</key>
+			<string>Enable Quick Launch</string>
+			<key>PostNotification</key>
+			<string>com.unit22.lsutilityprefs/settingschanged</string>
+		</dict>
+		<dict>
+			<key>isController</key>
+			<true/>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Choose Custom Application</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/Preferences/com.unit22.lsutilityprefs.plist</string>
+			<key>ALSettingsKey</key>
+			<string>cameraSelectedApp</string>
+			<key>ALChangeNotification</key>
+			<string>com.unit22.lsutlityprefs/settingschanged</string>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALSingleEnabledMode</key>
+			<string>1</string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>System Applications</string>
+					<key>predicate</key>
+					<string>isSystemApplication = TRUE</string>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>User Applications</string>
+					<key>predicate</key>
+					<string>isSystemApplication = FALSE</string>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Left Grabber</string>
+			<key>footerText</key>
+			<string>Quick launch allows you to make the left grabber always be shown and launch a custom app for quickness (In Development).</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.unit22.lsutilityprefs</string>
+			<key>key</key>
+			<string>QuickLaunchisEnabled</string>
+			<key>label</key>
+			<string>Enable Quick Launch</string>
+			<key>PostNotification</key>
+			<string>com.unit22.lsutilityprefs/settingschanged</string>
+		</dict>
+		<dict>
+			<key>isController</key>
+			<true/>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Choose Custom Application</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/Preferences/com.unit22.lsutilityprefs.plist</string>
+			<key>ALSettingsKey</key>
+			<string>SelectedApp</string>
+			<key>ALChangeNotification</key>
+			<string>com.unit22.lsutlityprefs/settingschanged</string>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALSingleEnabledMode</key>
+			<string>1</string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>System Applications</string>
+					<key>predicate</key>
+					<string>isSystemApplication = TRUE</string>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>User Applications</string>
+					<key>predicate</key>
+					<string>isSystemApplication = FALSE</string>
+					<key>cell-class-name</key>
+					<string>ALCheckCell</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>suppress-hidden-apps</key>
+					<string>1</string>
+				</dict>
+			</array>
+		</dict>
+    </array>
+    <key>title</key>
+    <string>Grabbers</string>
+</dict>
+</plist>

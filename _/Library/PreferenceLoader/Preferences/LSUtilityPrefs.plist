@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = LSUtilityPrefs;
+		cell = PSLinkCell;
+		detail = "LSUtilityPrefsListController";
+		icon = "LSUtilityPrefs.png";
+		isController = 1;
+		label = LSUtility;
+	};
+}

@@ -1,0 +1,16 @@
+Package: com.unit22.lsutility
+Architecture: iphoneos-arm
+Maintainer: DARKUNIT22
+Depends: mobilesubstrate, applist
+Filename: debs//tweaks/com.unit22.lsutility.deb
+Size: 35200
+MD5sum: 1f08ec3e4f2d9a848b7de4405ccc558d
+SHA1: bcf465ec45c741f4323208a16c08b762faf2c21c
+SHA256: 590f95f9b1ceb88bba9023f14d540db3f99b3b7b86b8e4b76976fdc2469842d8
+Section: Tweaks
+Description: Lockscreen tweak with multiple settings.
+Author: DARKUNIT22 <darkunit22@gmail.com>
+Depiction: http://darkunit22.github.io/depic/index.html?p=com.unit22.lsutility
+Name: LSUtility
+Version: 0.0.1-158-1
+Installed-Size: 444
